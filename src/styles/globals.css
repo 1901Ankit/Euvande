@@ -1,0 +1,427 @@
+/* .custom_btn:disabled {
+  pointer-events: none;
+}
+
+.custom_btn:hover {
+  color: #fff;
+  background-color: rgba(36, 35, 35, 1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.custom_btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.custom_btn {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid rgba(36, 35, 35, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-width: 0;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+} */
+
+/* css */
+
+/* CSS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS */
+.custom-btn {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.link {
+  color: inherit;
+}
+
+.custom-btn:hover {
+  transform: translateY(-1px);
+}
+
+.custom-btn:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+/* css */
+
+p {
+  margin-bottom: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0 !important;
+}
+
+.f-25 {
+  font-size: 25px;
+}
+
+.w-500 {
+  width: 500px;
+}
+
+/* CSS */
+.custom_btn {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.custom_btn span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.custom_btn span:last-child {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.custom_btn:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.custom_btn:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(0.3deg) scaleY(2);
+}
+
+.custom_btn:hover span:last-child {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.custom_btn:disabled {
+  pointer-events: none;
+  background-color: #eee;
+}
+
+/* second button */
+.custom_btn_white {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 15px;
+  padding: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.custom_btn_white span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.custom_btn_white span:last-child {
+  color: #000;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.custom_btn_white:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.custom_btn_white:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(0.3deg) scaleY(2);
+}
+
+.custom_btn_white:hover span:last-child {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.custom_btn_white:disabled {
+  pointer-events: none;
+  background-color: #eee;
+}
+
+/* second button */
+
+.absolute__header {
+  position: absolute;
+  z-index: 999;
+  height: 45px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 5px solid #333;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+.ReactFlagsSelect-module_flagsSelect__2pfa2 {
+  padding-bottom: 0 !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* font-size */
+.f-12 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.f-13 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.f-40 {
+  font-size: 40px;
+}
+
+.f-30 {
+  font-size: 30px;
+}
+
+.f-10 {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.f-9 {
+  font-size: 9px;
+}
+
+/* font-size */
+
+.brands:hover {
+  transition: 1s ease all;
+  transform: scale(1);
+}
+
+.brands:hover {
+  border: 1px solid rgba(0, 0, 253, 0.463);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .custom_btn {
+    width: 100% !important;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.MuiTabs-indicator {
+  background-color: transparent;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.icon-container {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.heartbeat {
+  animation: heartbeat 1s infinite;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.dot {
+  border-radius: 50%;
+  background: #000;
+  width: 10px;
+  height: 10px;
+}
+
+@keyframes heartbeat {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+  }
+
+  25% {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+  }
+
+  75% {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* material ui  */
+/* .css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+  width: 300px;
+} */
+
+/* swiper css */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+  color: #fff;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  border: 1px solid #000;
+  border-radius: 50%;
+  height: 50px !important;
+  width: 50px !important;
+  background-color: #00000041;
+}
+
+
+
+
+.css-1aquho2-MuiTabs-indicator {
+  display: none;
+}

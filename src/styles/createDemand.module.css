@@ -1,0 +1,8 @@
+.image_bg {
+    background: rgb(255, 255, 255);
+    background: linear-gradient( rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    height: 80vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}

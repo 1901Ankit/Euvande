@@ -1,0 +1,26 @@
+.bannerForm {
+    background: rgb(128, 0, 128);
+    background: linear-gradient(174deg, rgba(128, 0, 128, 1) 48%, rgba(50, 57, 189, 1) 100%);
+}
+
+.bg_home {
+    background-image: url('../../public/images/banner_image/banner_01.webp');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.howItWorks {
+    background-color: #f5f7fb;
+}
+
+
+@media screen and (max-width:600px) {
+    .bg_home {
+        height: 80vh;
+    }
+}

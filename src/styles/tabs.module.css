@@ -1,0 +1,31 @@
+.brandsSelected {
+    border: 1px solid #f15d17;
+    scale: 1.1;
+    transition: 0.5s ease all;
+}
+
+.year_Selector {
+    border: 1px solid #f15d17;
+    scale: 1.1;
+    transition: 0.5s ease all;
+}
+
+.overflow_wrapper {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.overflow_wrapper::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+}
+
+.carCard_wrapper {
+    width: 250px;
+}
+
+@media screen and (max-width:600px) {
+    .carCard_wrapper {
+        width: 100%
+    }
+}

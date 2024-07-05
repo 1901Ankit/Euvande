@@ -1,0 +1,20 @@
+.bg_image {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    height: 80vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent_wrapper {
+    position: relative;
+}
+
+.child_wrapper {
+    position: relative;
+    top: -110px;
+    width: 100%;
+
+}

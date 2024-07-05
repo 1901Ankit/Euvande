@@ -1,0 +1,36 @@
+.flags_select {
+    padding: 0 !important;
+    /* bottom: 8px; */
+}
+
+.flags_select_error {
+    padding: 0 !important;
+    bottom: 10.4px;
+}
+
+.flags_select button {
+    height: 55px;
+    border-radius: 0px;
+    border: none;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.flags_select_error button {
+    height: 55px;
+
+    border-radius: 0px;
+    border: none;
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    border-bottom: 1px solid red;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.flags_select ul {
+    width: 125px;
+}
